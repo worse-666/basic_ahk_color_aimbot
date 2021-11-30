@@ -1,1 +1,1 @@
-# fastest_ahk_color_aimbot
+# Just a best aimbot script
