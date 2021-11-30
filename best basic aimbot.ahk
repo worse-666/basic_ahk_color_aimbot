@@ -27,7 +27,7 @@ game_fov  := 103 ;Game fov
 game_fps  := 84 ;Display refresh rate
 
 
-;use this tool and set sensitivity and dpi to 1, then copy In/360 https://gamingsmart.com/mouse-sensitivity-converter
+;use this tool and set sensitivity and dpi to 1, then copy In/360 value https://gamingsmart.com/mouse-sensitivity-converter
 ;Apex Legends: 16363.64
 ;CSGO: 16363.64
 ;Halo Infinite: 17454.6
