@@ -26,7 +26,7 @@ game_sens := 0.31 ;Game sens
 game_fov  := 103 ;Game fov
 game_fps  := 84 ;Display refresh rate
 
-full360 := 5142.6/game_sens ;find your full360
+full360 :=  ;???/game_sens ;find your full360
 
 EMCol := 0x56007D ;Enemy color
 ColVn := 10 ;Variation
