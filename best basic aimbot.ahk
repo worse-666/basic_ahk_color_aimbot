@@ -26,7 +26,12 @@ game_sens := 0.31 ;Game sens
 game_fov  := 103 ;Game fov
 game_fps  := 84 ;Display refresh rate
 
-full360 :=  ;???/game_sens ;find your full360
+
+;use this tool and set sensitivity and dpi to 1, then copy In/360 https://gamingsmart.com/mouse-sensitivity-converter
+;Apex Legends: 16363.64
+;CSGO: 16363.64
+;Halo Infinite: 17454.6
+full360 := 16363.64/game_sens ;Modify it to the value of the corresponding game
 
 EMCol := 0x56007D ;Enemy color
 ColVn := 10 ;Variation
