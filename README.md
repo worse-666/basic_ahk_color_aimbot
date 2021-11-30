@@ -1,1 +1,1 @@
-# Just a best aimbot script
+# Just a best color aimbot script
