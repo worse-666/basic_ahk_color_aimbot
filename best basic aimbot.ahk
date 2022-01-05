@@ -95,6 +95,13 @@ deg2coord(delta, fov, winwidth, winheight) {
     return winwidth*0.5/tan(deg2rad(fov*0.5))*tan(deg2rad(delta))
 }
 
+;Apex Legends must use this conversion
+RealFov(fov, winwidth, winheight) {
+    raspectRatio := (winwidth/winheight)/(4/3)
+    return 2*rad2deg(atan(tan(deg2rad(fov*0.5))*raspectRatio))
+}
+
+
 
 
 F6::reload
