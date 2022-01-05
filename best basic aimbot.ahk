@@ -1,4 +1,4 @@
-﻿#NoEnv
+#NoEnv
 #SingleInstance, Force
 #Persistent
 #InstallKeybdHook
@@ -22,10 +22,9 @@ FlickBefore := 0
 
 aim_key := "RButton" ;List of Keys: https://www.autohotkey.com/docs/KeyList.htm
 
-game_sens := 0.31 ;Game sens
-game_fov  := 103 ;Game fov
+game_sens := 1.5 ;Game sens
+game_fov  := 110 ;Game fov    ;Apex Legends use this -> game_fov := RealFov(110, A_ScreenWidth, A_ScreenHeight)
 game_fps  := 84 ;Display refresh rate
-
 
 ;use this tool and set sensitivity and dpi to 1, then copy In/360 value https://gamingsmart.com/mouse-sensitivity-converter
 ;Apex Legends: 16363.64
@@ -33,14 +32,16 @@ game_fps  := 84 ;Display refresh rate
 ;Halo Infinite: 17454.6
 full360 := 16363.64/game_sens ;Modify it to the value of the corresponding game
 
-EMCol := 0x56007D ;Enemy color
-ColVn := 10 ;Variation
+EMCol := 0x30B9B8 ;Enemy color
+ColVn := 11 ;Variation
 OffsetX := 0
 OffsetY := 4
 ZeroX := Floor(A_ScreenWidth  // 2) - OffsetX
 ZeroY := Floor(A_ScreenHeight // 2) - OffsetY
-CFovX := deg2coord(20, game_fov, A_ScreenWidth, A_ScreenHeight) ;aimbot fov x. range: 0 ~ game_fov/2
-CFovY := deg2coord(20, game_fov, A_ScreenWidth, A_ScreenHeight) ;aimbot fov y. range: 0 ~ game_fov/2
+CFovX := 20 ;aimbot fov x. range: 0 ~ game_fov/2
+CFovY := 20 ;aimbot fov y. range: 0 ~ game_fov/2
+CFovX := deg2coord(CFovX, game_fov, A_ScreenWidth, A_ScreenHeight)
+CFovY := deg2coord(CFovY, game_fov, A_ScreenWidth, A_ScreenHeight)
 SpeedX := 0.5 ;aimbot speed. range: 0 ~ 1
 SpeedY := 0.5 ;aimbot speed. range: 0 ~ 1
 ScanL := ZeroX - CFovX
@@ -100,8 +101,6 @@ RealFov(fov, winwidth, winheight) {
     raspectRatio := (winwidth/winheight)/(4/3)
     return 2*rad2deg(atan(tan(deg2rad(fov*0.5))*raspectRatio))
 }
-
-
 
 
 F6::reload
