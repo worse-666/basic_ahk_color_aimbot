@@ -23,7 +23,7 @@ FlickBefore := 0
 aim_key := "RButton" ;List of Keys: https://www.autohotkey.com/docs/KeyList.htm
 
 game_sens := 1.5 ;Game sens
-game_fov  := 110 ;Game fov    ;Apex Legends use this -> game_fov := RealFov(110, A_ScreenWidth, A_ScreenHeight)
+game_fov  := 110 ;Game fov    ;Apex Legends and csgo use this -> game_fov := RealFov(110, A_ScreenWidth, A_ScreenHeight)
 game_fps  := 84 ;Display refresh rate
 
 ;use this tool and set sensitivity and dpi to 1, then copy In/360 value https://gamingsmart.com/mouse-sensitivity-converter
